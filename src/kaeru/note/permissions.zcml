@@ -6,6 +6,12 @@
   <configure zcml:condition="installed AccessControl.security">
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="kaeru.note.AddNote"
+        title="kaeru.note: Add Note"
+    />
+
+
 
   </configure>
 
