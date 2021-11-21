@@ -2,15 +2,11 @@
 from kaeru.note.content.note import INote  # NOQA E501
 from kaeru.note.testing import KAERU_NOTE_INTEGRATION_TESTING  # noqa
 from plone import api
-from plone.app.testing import setRoles
-from plone.app.testing import TEST_USER_ID
+from plone.app.testing import setRoles, TEST_USER_ID
 from plone.dexterity.interfaces import IDexterityFTI
-from zope.component import createObject
-from zope.component import queryUtility
+from zope.component import createObject, queryUtility
 
 import unittest
-
-
 
 
 class NoteIntegrationTest(unittest.TestCase):
