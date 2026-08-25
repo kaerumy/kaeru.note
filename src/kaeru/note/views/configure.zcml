@@ -14,6 +14,16 @@
     permission="zope2.View"
     />
 
+  <!-- Note-specific master template: renders title, description,
+       belowcontenttitle and abovecontenttitle (lead image, social
+       tags) in that order. -->
+  <browser:page
+    name="main_template"
+    for="kaeru.note.content.note.INote"
+    template="note_main_template.pt"
+    permission="zope.Public"
+    />
+
   <browser:viewlet
     name="kaeru.note.leadimage"
     for="kaeru.note.content.note.INote"
