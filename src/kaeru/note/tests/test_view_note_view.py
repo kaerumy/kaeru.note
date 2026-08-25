@@ -6,7 +6,7 @@ from kaeru.note.testing import (
 from plone import api
 from plone.app.testing import setRoles, TEST_USER_ID
 from zope.component import getMultiAdapter
-from zope.component.interfaces import ComponentLookupError
+from zope.interface.interfaces import ComponentLookupError
 
 import unittest
 

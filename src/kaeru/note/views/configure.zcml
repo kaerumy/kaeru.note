@@ -14,5 +14,14 @@
     permission="zope2.View"
     />
 
+  <browser:viewlet
+    name="kaeru.note.leadimage"
+    for="kaeru.note.content.note.INote"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+    class=".leadimage.NoteLeadImageViewlet"
+    template="leadimage.pt"
+    permission="zope2.View"
+    />
+
 
 </configure>
